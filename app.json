@@ -28,6 +28,15 @@
         "projectId": "2b36798f-10cc-4c19-88d0-8689c9204caa"
       }
     },
+     "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
     "owner": "gleiserwesley"
   }
+
 }

@@ -1,18 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import {Box} from "native-base";
+import ImagePickerGalery from "../../components/ImagePicker";
 
-
-export default function HomeScreen({ navigation }) {
+export default function ImageGaleryScreen() {
   return (
       <Box flex={1} justifyContent="center" alignItems="center" bg={'blueGray.900'}>
         <View style={styles.container}>
-          <Text style={styles.title}>Bem-vindo à Tela Home!</Text>
-            <Text style={styles.text}>Escolha o que deseja fazer:</Text>
-            <Button
-                title="ImageGalery"
-                 onPress={() => navigation.navigate('ImageGalery')} // Usa navigation para navegar
-              />
+          <Text style={styles.title}>Bem-vindo à ImageGalery</Text>
+            <Text style={styles.text}>Clique no botão para poder escolher sua foto:</Text>
+            <ImagePickerGalery />
         </View>
       </Box>
   );
@@ -32,6 +29,6 @@ const styles = StyleSheet.create({
   text:{
       color: 'white',
       fontSize: 16,
-      margin: 10,
+      margin: 8,
   }
   });
