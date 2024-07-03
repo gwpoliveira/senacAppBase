@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import {Box} from "native-base";
 import ImagePickerGalery from "../../components/ImagePicker";
 
-export default function ImageGaleryScreen() {
+export default function ImageGaleryScreen({navigation}) {
   return (
       <Box flex={1} justifyContent="center" alignItems="center" bg={'blueGray.900'}>
         <View style={styles.container}>
